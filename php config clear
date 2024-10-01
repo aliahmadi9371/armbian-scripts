@@ -1,0 +1,3 @@
+sudo php artisan config:cache
+sudo php artisan config:clear
+

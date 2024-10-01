@@ -1,0 +1,13 @@
+RTC
+
+new RTC(int /etc/rc.local):
+    echo ds1307 0x68 > /sys/class/i2c-adapter/i2c-0/new_device
+
+show RTC:
+    sudo hwclock -r -f /dev/rtc1
+
+set RTC from sys time:
+    sudo hwclock -w -f /dev/rtc1
+
+set sys time from RTC
+    sudo hwclock -s -f /dev/rtc1
